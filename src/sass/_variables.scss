@@ -1,0 +1,37 @@
+//colors
+$textColor: black;
+$bgrColor: #fefefe;
+$color: rgb(230, 57, 70);
+
+$color5: #060d0d;
+$color4: #142626;
+$color3: #6e7372;
+$color2: #bdbfbd;
+
+$boxShadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.1);
+
+//border-radius
+$radius: 5px;
+
+//border
+$border: 10px solid $bgrColor;
+$border2: 10px solid $color5;
+
+//breakpoints
+@media (min-width: 1024px) {
+}
+
+$breakpoints-down: (
+	"xs": "500px",
+	"small": "800px",
+	"medium": "1024px",
+	"midi": "1280px",
+	"large": "1380px",
+	"xlarge": "1599px",
+);
+
+@mixin breakpoint-down($size) {
+	@media (max-width: map-get($breakpoints-down, $size)) {
+		@content;
+	}
+}

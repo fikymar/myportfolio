@@ -1,0 +1,77 @@
+.about_layout {
+	transition: all 0.5s ease-in-out;
+
+	& h3 {
+		text-align: center;
+		font-weight: 500;
+	}
+}
+
+.about {
+	transition: all 0.5s ease-in-out;
+}
+.skills_header,
+.about h3,
+.about p {
+	padding: 1.2rem 1rem;
+	white-space: pre-line;
+}
+
+.skills {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 2rem 1rem;
+	width: 100%;
+	//min-height: 30vh;
+	transition: all 0.5s ease-in-out;
+
+	& figure {
+		width: 5rem;
+		height: 5rem;
+		border-radius: $radius;
+		padding: 0.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-around;
+		transition: all 0.3s ease-in-out;
+		background-color: $color4;
+		margin: 1rem;
+		color: $bgrColor;
+
+		& i {
+			font-size: 2rem;
+		}
+
+		& img {
+			//transform: scale(0.5);
+			margin: 0;
+			padding: 0;
+			max-width: 3rem;
+		}
+
+		& figcaption {
+			font-size: 0.7rem;
+			font-weight: 600;
+			white-space: nowrap;
+		}
+
+		& #commerce {
+			font-size: 0.6rem;
+		}
+
+		&:hover {
+			flex-direction: column-reverse;
+			align-items: flex-end;
+			justify-content: space-around;
+			background: $color;
+			//transform: rotate(90deg);
+
+			figcaption,
+			i {
+				color: $bgrColor;
+			}
+		}
+	}
+}

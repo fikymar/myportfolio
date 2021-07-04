@@ -1,0 +1,84 @@
+.resume_layout {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 1rem;
+}
+
+.education,
+.work {
+	margin-left: 1rem;
+	& h4 {
+		margin-bottom: 1rem;
+
+		.MuiSvgIcon-root {
+			background-color: $color;
+			border-radius: 50%;
+			transform: scale(1.2);
+			margin-right: 0.5rem;
+			border: 2px solid $color;
+			vertical-align: text-bottom;
+		}
+	}
+
+	& ul {
+		& li {
+			list-style-type: none;
+			margin-bottom: 1rem;
+
+			& .resume_institution {
+				margin-bottom: 5px;
+				color: $color5;
+			}
+
+			& .resume_title {
+				//font-style: italic;
+				margin-bottom: 5px;
+				color: $color2;
+			}
+
+			& h6 {
+				margin-bottom: 5px;
+				color: $color5;
+				& .MuiSvgIcon-root {
+					font-size: 1rem;
+					margin-right: 5px;
+					color: $color;
+				}
+			}
+
+			& p {
+				font-size: 0.8rem;
+				font-family: "Montserrat Alternates", sans-serif;
+				text-align: left;
+				white-space: pre-line;
+			}
+		}
+	}
+}
+
+.certificates {
+	margin-top: 1rem;
+	& h4 i {
+		background-color: $color;
+		border-radius: 50%;
+		margin-left: 0;
+		margin-right: 0.5rem;
+		padding: 5px;
+		font-size: 0.9rem;
+	}
+
+	& p i {
+		color: $color;
+		background-color: $bgrColor;
+		padding: 4px;
+		border-radius: 50%;
+		margin-left: 0.5rem;
+		transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+		&:hover {
+			color: $bgrColor;
+			background-color: $color;
+		}
+	}
+}
