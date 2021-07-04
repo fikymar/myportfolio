@@ -17,7 +17,7 @@ export default {
    
 
     name: 'Marcela Fikrlová',
-    title: 'začínající frontend kodér',
+    title: 'začínající frontend developer',
     email: 'Marcela.Jaklova@gmail.com',
     mailto: 'mailto:marcela.jaklova@gmail.com?body=Zdravím, Marcelo',
     phone: '+420 739 567 245',

@@ -130,8 +130,8 @@
 }
 
 .profile .imgContainer {
-  height: 20vh;
-  width: 20vh;
+  height: 30vh;
+  width: 30vh;
   background-image: url("../utils/imgs/mecolor.jpg");
   -webkit-clip-path: circle(40% at 50% 50%);
   clip-path: circle(40% at 50% 50%);
