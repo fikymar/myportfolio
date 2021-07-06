@@ -14,7 +14,7 @@ import '../src/sass/App.css'
 
 
 function App() {
-  const [language, setLanguage] = useState(false);
+  const [language, setLanguage] = useState(true);
 
   const handleLanguage = () => {
     setLanguage(!language)

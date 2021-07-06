@@ -194,7 +194,7 @@ export default {
     ],
    
    
-    about: `Jmenuju se Marcela. \n Na mateřské "dovolené" jsem si našla nové společníky HTML, CSS a JavaScript. V životě už jsem dělala ledacos, ale do budoucna bych se ráda věnovala frontendu, ideálně jako výdělečné činnosti.☺\n Učím se kódovat už rok a půl za pomocí různých online kurzů a tutoriálů. Zatím je můj frontend ještě v plenkách, ale věřím, že se správným tréninkem a péčí poroste. \n Začátky jsou krušné a tak prostřednictvím těchto stránek hledám pomoc ve formě reálných projektů, či rady a kritiky od zkušenějších. \n Díky, že jste dočetli až sem a budu ráda, když si uděláte čas a kontaktujete mě s jakoukoliv připomínkou či nabídkou spolupráce.`,
+    about: `Jmenuju se Marcela. \n Na mateřské "dovolené" jsem si našla nové společníky - HTML, CSS a JavaScript. \n V životě už jsem dělala ledacos, ale do budoucna bych se ráda věnovala frontendu, ideálně jako výdělečné činnosti.☺\n Učím se kódovat už rok a půl za pomocí různých online kurzů a tutoriálů. Zatím je můj frontend ještě v plenkách, ale věřím, že se správným tréninkem a péčí poroste. \n Začátky jsou krušné a tak prostřednictvím těchto stránek hledám pomoc ve formě reálných projektů, či rady a kritiky od zkušenějších. \n Díky, že jste dočetli až sem a budu ráda, když si uděláte čas a kontaktujete mě s jakoukoliv připomínkou či nabídkou spolupráce.`,
     aboutEN: `My name is Marcela. \n
     On a maternity leave, I found myself several new companions -  HTML, CSS and JavaScript. \n I've done a lot in my life, but in the future I would like to make a living by Frontend.\n
     I have been learning to code for a year and a half using various online courses and tutorials. So far, my frontend is still in its infancy, but I believe that with the right training and care, it will grow.☺\n
@@ -209,12 +209,13 @@ export default {
             technologies: [
                 'HTML', 'SCSS', 'React'
             ],
+            framework: 'React',
             img: 
                 crowdfunding,
             deployed: 'https://crowfunding-app.vercel.app/',
             github: 'https://github.com/fikymar/Crowfunding-app',
             description: 'React app \n - uživatelské interakce \n Nakodováno podle předlohy z ',
-            frontendmentor: 'https://www.frontendmentor.io/solutions',
+            frontendmentor: 'https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR',
                 
          
         },
@@ -224,6 +225,7 @@ export default {
             technologies: [
                 'HTML', 'SCSS', 'JavaScript'
             ],
+            framework: 'React',
             img: 
                 coffee,
             deployed: 'https://coffee-website-beta.vercel.app/',
@@ -268,7 +270,7 @@ export default {
             deployed: 'https://frontend-mentor-profile-card-component-teal.vercel.app/',
             github: 'https://github.com/fikymar/Frontend-Mentor-profile-card-component',
             description: 'Drobný komponent. \n Nakodováno podle předlohy z ',
-            frontendmentor: 'https://www.frontendmentor.io/solutions',
+            frontendmentor: 'https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ',
                 
 
         },
@@ -284,7 +286,7 @@ export default {
             github: 'https://github.com/fikymar/Article-preview-component',
            
             description: 'Drobný komponent. \n Nakodováno podle předlohy z ',
-            frontendmentor: 'https://www.frontendmentor.io/solutions',
+            frontendmentor: 'https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT',
                 
 
         },
@@ -299,7 +301,7 @@ export default {
             github: 'https://github.com/fikymar/social-proof-section-master',
            
             description: 'Drobný komponent. \n Nakodováno podle předlohy z ',
-            frontendmentor: 'https://www.frontendmentor.io/solutions',
+            frontendmentor: 'https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA',
                 
 
         },
@@ -346,7 +348,7 @@ export default {
                 deployed: 'https://crowfunding-app.vercel.app/',
                 github: 'https://github.com/fikymar/Crowfunding-app',
                 description: 'React app \n - user interaction \n Code to design',
-                frontendmentor: 'https://www.frontendmentor.io/solutions',
+                frontendmentor: 'https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR',
                     
              
             },
@@ -400,7 +402,7 @@ export default {
                 deployed: 'https://frontend-mentor-profile-card-component-teal.vercel.app/',
                 github: 'https://github.com/fikymar/Frontend-Mentor-profile-card-component',
                 description: 'Small component. \n Code to design',
-                frontendmentor: 'https://www.frontendmentor.io/solutions',
+                frontendmentor: 'https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ',
                     
     
             },
@@ -416,7 +418,7 @@ export default {
                 github: 'https://github.com/fikymar/Article-preview-component',
                
                 description: 'Small component. \n Code to  design',
-                frontendmentor: 'https://www.frontendmentor.io/solutions',
+                frontendmentor: 'https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT',
                     
     
             },
@@ -431,7 +433,7 @@ export default {
                 github: 'https://github.com/fikymar/social-proof-section-master',
                
                 description:'Small component. \n Code to design',
-                frontendmentor: 'https://www.frontendmentor.io/solutions',
+                frontendmentor: 'https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA',
                     
     
             },

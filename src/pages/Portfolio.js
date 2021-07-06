@@ -3,18 +3,43 @@ import Data from '../utils/Data'
 
 import HttpIcon from '@material-ui/icons/Http';
 import GitHubIcon from '@material-ui/icons/GitHub';
+//import { useState, useEffect } from 'react';
 
-const Portfolio = ({language}) => {
+
+const Portfolio = ({ language }) => {
+    // const [filter, setFilter] = useState(false);
+    
+     let projects = Data.projects.map(project =>
+        project);
+    console.log(projects)
+   
+    // let filtered;
+    // const filterItems = (keyword) => {
+        
+    //     setFilter(!filter)
+    //     if (filter) {
+    //         filtered = projects.filter(project => project.framework === keyword);
+    //     }
+    // return filtered
+    // }
+ 
+    // useEffect(() => {
+    //     filterItems('React')
+    //     // console.log(filtered)
+    // },[]);
+    
     return (
 <>
             <h1>{language ? 'Projekty' : 'Projects'}</h1>
-        <div className='portfolio_layout'>
-          
-        {language ? Data.projects.map(project => (
+            <div className='portfolio_layout'>
+                {/* <button className='allBTN'>All</button>
+          <button className='ReactBTN' >React</button> */}
+        {language ? projects.map(project => (
             <div className='portfolio_card' key={project.id} >
                 <div className='portfolio_card--front'>
                     <img src={project.img} alt={project.title} />
                     <h5>{project.title}</h5>
+                  
                 </div>
                 <div className='portfolio_card--back'>
 			<h6>{project.technologies.join(', ')}</h6>

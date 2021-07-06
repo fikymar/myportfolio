@@ -5,6 +5,12 @@
 		text-align: center;
 		font-weight: 500;
 	}
+
+	&:hover {
+		.skills {
+			background: $color4;
+		}
+	}
 }
 
 .about {
@@ -17,6 +23,10 @@
 	white-space: pre-line;
 }
 
+.skills_header {
+	font-family: "Tourney", cursive;
+}
+
 .skills {
 	display: flex;
 	justify-content: space-evenly;
@@ -25,6 +35,10 @@
 	width: 100%;
 	//min-height: 30vh;
 	transition: all 0.5s ease-in-out;
+
+	@include breakpoint-down(medium) {
+		background-color: $color4;
+	}
 
 	& figure {
 		width: 5rem;

@@ -27,7 +27,7 @@ const Header = ({ handleLanguage, language }) => {
         <nav className={`nav ${hamburger ? 'open' : 'hideNav'}`}>
             <div className={`nav_list ${hamburger ? '' : 'hide'}`}>
             <a className='nav_item' href='/'>{language ? 'O MNĚ' : 'ABOUT ME'}</a>
-            <a className='nav_item' href='/resume'>{language ? 'ŽIVOTOPIS' : 'RESUME'}</a>
+            <a className='nav_item' href='/resume'>{language ? 'životopis' : 'RESUME'}</a>
                 <a className='nav_item' href='/portfolio'>PORTFOLIO</a>
                 </div>
             <button className={`languageBTN ${hamburger ? '' : 'hideBTN'}`} title='Change language' onClick={() => handleLanguage()}>{language ? 'EN' : 'CZ'}</button>
