@@ -58,7 +58,7 @@
 }
 
 .certificates {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	& h4 i {
 		background-color: $color;
 		border-radius: 50%;
@@ -80,5 +80,9 @@
 			color: $bgrColor;
 			background-color: $color;
 		}
+	}
+
+	& a:focus {
+		background-color: $color;
 	}
 }

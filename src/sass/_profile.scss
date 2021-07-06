@@ -38,7 +38,8 @@
 				margin: 0 1rem;
 			}
 
-			& .MuiSvgIcon-root:hover {
+			& .MuiSvgIcon-root:hover,
+			& .MuiSvgIcon-root:focus {
 				background-color: $color2;
 				color: $color;
 			}
@@ -47,6 +48,11 @@
 			h6 {
 				font-size: 0.9rem;
 				font-weight: bold;
+
+				&:not(:first-child):focus {
+					background-color: $bgrColor;
+					color: $color;
+				}
 
 				@include breakpoint-down(small) {
 					font-size: 0.7rem;
@@ -64,6 +70,7 @@
 		text-transform: uppercase;
 		text-align: center;
 		font-family: "Graduate";
+		margin-top: 2rem;
 
 		@include breakpoint-down(medium) {
 			display: none;
@@ -81,12 +88,15 @@
 	.imgContainer {
 		height: 30vh;
 		width: 30vh;
-
 		background-image: url("../utils/imgs/mecolor.jpg");
 		-webkit-clip-path: circle(40% at 50% 50%);
 		clip-path: circle(40% at 50% 50%);
-
 		background-size: cover;
+		transition: transform 1s ease-in-out;
+
+		&:hover {
+			transform: rotateY(180deg);
+		}
 
 		@include breakpoint-down(medium) {
 			height: 150px;
@@ -105,11 +115,5 @@
 		@include breakpoint-down(medium) {
 			border: none;
 		}
-		// max-height: 30vh;
-		// width: 100%;
-		// object-fit: cover;
-		// border: $border;
-		// clip-path: polygon(5% 5%, 100% 0%, 95% 95%, 0% 100%);
-		// margin: 1rem 0;
 	}
 }

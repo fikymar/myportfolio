@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -11,33 +12,42 @@ import '../src/sass/App.css'
 
 
 
+
 function App() {
+  const [language, setLanguage] = useState(false);
+
+  const handleLanguage = () => {
+    setLanguage(!language)
+  }
+
   return (
     <div className='main_layout'>
       <section className='profile_place'>
-        <Profile />
+        <Profile language={language} />
         </section>
       <Router>
         <section className='header_place' >
-          <Header />
+          <Header handleLanguage={handleLanguage} language={language} />
         </section>
        
         <Switch>
         <Route path='/' exact>
             <section className='about_place main'>
-              <About />
+              <About language={language} />
             </section>
             </Route>
           <Route path='/portfolio'>
             <section className='portfolio_place main'>
-             <Portfolio />
+             <Portfolio language={language} />
             </section>
           </Route>
-          <section className='resume_place main'>
+        
              <Route path='/resume'>
-            <Resume /> 
+             <section className='resume_place main'>
+              <Resume language={language} />
+              </section>
             </Route>
-          </section>
+         
         
           </Switch>
         

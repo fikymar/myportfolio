@@ -5,15 +5,19 @@ import three from '../utils/imgs/three.svg'
 import commerce from '..//utils/imgs/commerce.svg'
 import pixlr from '..//utils/imgs/pixlr-header-logo.png'
 
-const About = () => {
+const About = ({language}) => {
     return (
         <div className='about_layout'>
             <div className='about'>
-            <h1>Vítám Vás tady...</h1>
-            <p>{Data.about}</p>
+                {language ?
+                    <h1>Vítám Vás tady...</h1> :
+                    <h1>Welcome here...</h1>
+                 }
+            
+            <p>{language ? Data.about : Data.aboutEN}</p>
             </div>
            
-                <h3 className='skills_header'>S čím pracuju?</h3>
+            <h3 className='skills_header'>{language ? 'S čím pracuju?' : 'Stack'}</h3>
             <div className='skills'>
                 <figure>
                 <i class="fab fa-html5"></i>
@@ -32,7 +36,7 @@ const About = () => {
                     <figcaption>JavaScript</figcaption>
                 </figure>
 
-                <figure>
+                <figure title='My BFF right now'>
                 <i class="fab fa-react"></i>
                     <figcaption>React</figcaption>
                 </figure>

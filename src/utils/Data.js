@@ -18,6 +18,7 @@ export default {
 
     name: 'Marcela Fikrlová',
     title: 'začínající frontend developer',
+    titleEN: 'a beginning frontend developer',
     email: 'Marcela.Jaklova@gmail.com',
     mailto: 'mailto:marcela.jaklova@gmail.com?body=Zdravím, Marcelo',
     phone: '+420 739 567 245',
@@ -34,12 +35,14 @@ export default {
     works: [
 
         {
+            id: 1,
             company: 'Prominent Systems, s.r.o., Blovice',
             title: 'Nákupní referentka',
             date: '9/2013 - 5/2021',
             description: 'Komunikace s dodavateli, \n vyhledávání nových dodavatelů, \n objednávky výrobního materiálu',
             },
         {
+            id: 2,
             company: 'Orchid Flowers CZ, s.r.o., Blovice',
             title: 'Nákupčí, logistika, obchod',
         date: '10/2011 - 8/2013',
@@ -47,6 +50,7 @@ export default {
         },
 
         {
+            id: 3,
             company: 'OREA Wellness Hotel Horizont, Špičák',
             title: 'Recepční',
             date: '7/2011 - 9/2011',
@@ -54,6 +58,7 @@ export default {
         },
         
         {
+            id: 4,
             company: 'Faiveley Transport LEKOV a.s., Blovice',
             title: 'Nákupní referentka(trainee)',
             date: '7/2010 - 1/2011',
@@ -64,18 +69,21 @@ export default {
 
     certificates: [
         {
+            id: 1,
         title: 'Responsive Web Design',
             organization: 'Freecodecamp',
         link: 'https://www.freecodecamp.org/certification/fikymar/responsive-web-design',
             
         },
         {
+            id: 2,
             title: 'JavaScript Tutorial course',
                 organization: 'Sololearn',
             link: 'https://www.sololearn.com/Certificate/1024-17514864/jpg/',
                 
         },
         {
+            id: 3,
             title: 'CSS course',
                 organization: 'Sololearn',
             link: 'https://www.sololearn.com/Certificate/1023-17514864/jpg/',
@@ -83,6 +91,7 @@ export default {
         },
         
         {
+            id: 4,
             title: 'HTML course',
                 organization: 'Sololearn',
             link: 'https://www.sololearn.com/Certificate/1014-17514864/jpg/',
@@ -93,13 +102,15 @@ export default {
     education: [
        
         {
+            id: 1,
            school: 'ZČU v Plzni, fakulta ekonomická',
             title: 'Systémy projektového řízení',
             date: '9/2010 - 3/2011',
     
         },
 
-       {
+        {
+            id: 2,
            school: 'ZČU v Plzni, fakulta pedagogická',
            title: 'Psychologie se zaměřením na vzdělávání',
            date: '2007 - 2010',
@@ -107,6 +118,7 @@ export default {
        },
         
         {
+            id: 3,
             school: 'ISŠ Klatovy',
             title: 'Oděvnictví',
             date: '2003 - 2007',
@@ -114,12 +126,85 @@ export default {
             },
 
     ],
+
+    worksEN: [
+
+        {
+            id: 1,
+            company: 'Prominent Systems, s.r.o., Blovice',
+            title: 'Buyer',
+            date: '9/2013 - 5/2021',
+            description: 'Communication with suppliers, \n search for new suppliers, \n orders for production materials',
+            },
+        {
+            id: 2,
+            company: 'Orchid Flowers CZ, s.r.o., Blovice',
+            title: 'Commercial manager',
+        date: '10/2011 - 8/2013',
+        description: "Search for new suppliers, \n responsibility for the portfolio of suppliers (Kenya, Holland) \n responsibility for  logistics process, \n planning and ordering of materials, \n handling listing process with customers(retail chains), \n invoicing, handling complaints",
+        },
+
+        {
+            id: 3,
+            company: 'OREA Wellness Hotel Horizont, Špičák',
+            title: 'Receptionist',
+            date: '7/2011 - 9/2011',
+           
+        },
+        
+        {
+            id: 4,
+            company: 'Faiveley Transport LEKOV a.s., Blovice',
+            title: 'Buyer  - trainee',
+            date: '7/2010 - 1/2011',
+            
+            },
+
+    ],
+
+   
+
+    educationEN: [
+       
+        {
+            id: 1,
+           school: 'University of West Bohemia in Pilsen, Faculty of Economics',
+            title: 'Project engineering',
+           
+            date: '9/2010 - 3/2011',
+    
+        },
+
+       {
+           school: 'University of West Bohemia in Pilsen, Faculty of Education',
+           title: 'Psychology',
+           date: '2007 - 2010',
+           description: '2010 Bachelor degree \n Graduated with Honor',
+           id: 2,
+       },
+        
+        {
+            school: 'Integrated High School in Klatovy',
+            title: 'Fashion Design and Creation',
+            date: '2003 - 2007',
+            description: '2007 Graduated with Honor',
+            id: 3,
+            },
+
+    ],
+   
    
     about: `Jmenuju se Marcela. \n Na mateřské "dovolené" jsem si našla nové společníky HTML, CSS a JavaScript. V životě už jsem dělala ledacos, ale do budoucna bych se ráda věnovala frontendu, ideálně jako výdělečné činnosti.☺\n Učím se kódovat už rok a půl za pomocí různých online kurzů a tutoriálů. Zatím je můj frontend ještě v plenkách, ale věřím, že se správným tréninkem a péčí poroste. \n Začátky jsou krušné a tak prostřednictvím těchto stránek hledám pomoc ve formě reálných projektů, či rady a kritiky od zkušenějších. \n Díky, že jste dočetli až sem a budu ráda, když si uděláte čas a kontaktujete mě s jakoukoliv připomínkou či nabídkou spolupráce.`,
+    aboutEN: `My name is Marcela. \n
+    On a maternity leave, I found myself several new companions -  HTML, CSS and JavaScript. \n I've done a lot in my life, but in the future I would like to make a living by Frontend.\n
+    I have been learning to code for a year and a half using various online courses and tutorials. So far, my frontend is still in its infancy, but I believe that with the right training and care, it will grow.☺\n
+    The beginnings are rough, so through this website I am looking for a help in the form of real projects, or advice and criticism from more experienced developers.\n
+    Thanks for reading this far. I will be glad if you find time to contact me with any comments or offers for collaboration.`,
     
    
     projects: [
         {
+            id: 1,
             title: 'Crowdfunding app',
             technologies: [
                 'HTML', 'SCSS', 'React'
@@ -134,6 +219,7 @@ export default {
          
         },
         {
+            id: 2,
             title: 'Návrh webu',
             technologies: [
                 'HTML', 'SCSS', 'JavaScript'
@@ -146,7 +232,8 @@ export default {
          
         },
         {
-            title: 'Ubytování - reálný web',
+            id: 3,
+            title: 'Reálný web',
             technologies: [
                 'HTML', 'SCSS', 'JavaScript'
             ],
@@ -154,10 +241,11 @@ export default {
                 ubytko,
             deployed: 'https://ubytovaniujaklu.cf/',
             github: 'https://github.com/fikymar/ubytovani',
-            description: 'Jednoduchý web. \n Design a kód.',
+            description: 'Jednoduchý web pro poskytovatele ubytování. \n Design a kód.',
          
         },
         {
+            id: 4,
             title: 'Hodiny',
             technologies: [
                 'HTML', 'CSS', 'JavaScript'
@@ -170,6 +258,7 @@ export default {
          
         },
         {
+            id: 5,
             title: 'Card component',
             technologies: [
                 'HTML', 'SCSS',
@@ -184,6 +273,7 @@ export default {
 
         },
         {
+            id: 6,
             title: 'Article preview component',
             technologies: [
                 'HTML', 'JavaScript', 'SCSS',
@@ -199,6 +289,7 @@ export default {
 
         },
         {
+            id: 7,
             title: 'Social proof section',
             technologies: [
                 'HTML', 'SCSS',
@@ -213,6 +304,7 @@ export default {
 
         },
         {
+            id: 8,
             title: 'Mraky na canvasu',
             technologies: [
                 'HTML', 'SCSS','JavaScript'
@@ -228,6 +320,7 @@ export default {
         },
 
         {
+            id: 9,
             title: 'Technická dokumentace',
             technologies: [
                 'HTML', 'CSS',
@@ -239,6 +332,138 @@ export default {
                 
 
         },
+    ],
+
+        projectsEN: [
+            {
+                id: 1,
+                title: 'Crowdfunding app',
+                technologies: [
+                    'HTML', 'SCSS', 'React'
+                ],
+                img: 
+                    crowdfunding,
+                deployed: 'https://crowfunding-app.vercel.app/',
+                github: 'https://github.com/fikymar/Crowfunding-app',
+                description: 'React app \n - user interaction \n Code to design',
+                frontendmentor: 'https://www.frontendmentor.io/solutions',
+                    
+             
+            },
+            {
+                id: 2,
+                title: 'Design and Code',
+                technologies: [
+                    'HTML', 'SCSS', 'JavaScript'
+                ],
+                img: 
+                    coffee,
+                deployed: 'https://coffee-website-beta.vercel.app/',
+                github: 'https://github.com/fikymar/coffee-website',
+                description: 'Design and code. \n - JS animation \n  - parallax \n - svg filter. ',
+             
+            },
+            {
+                id: 3,
+                title: 'Real website for Accomodation provider',
+                technologies: [
+                    'HTML', 'SCSS', 'JavaScript'
+                ],
+                img: 
+                    ubytko,
+                deployed: 'https://ubytovaniujaklu.cf/',
+                github: 'https://github.com/fikymar/ubytovani',
+                description: 'Simple website. \n Design and code.',
+             
+            },
+            {
+                id: 4,
+                title: 'Hours',
+                technologies: [
+                    'HTML', 'CSS', 'JavaScript'
+                ],
+                img: 
+                    hours,
+                deployed: 'https://hours-liart.vercel.app/',
+                github: 'https://github.com/fikymar/Hours',
+                description: 'JavaScript hours. \n  - color theme is changing on timeinterval',
+             
+            },
+            {
+                id: 5,
+                title: 'Card component',
+                technologies: [
+                    'HTML', 'SCSS',
+                ],
+                img: 
+                    profilecard,
+                deployed: 'https://frontend-mentor-profile-card-component-teal.vercel.app/',
+                github: 'https://github.com/fikymar/Frontend-Mentor-profile-card-component',
+                description: 'Small component. \n Code to design',
+                frontendmentor: 'https://www.frontendmentor.io/solutions',
+                    
+    
+            },
+            {
+                id: 6,
+                title: 'Article preview component',
+                technologies: [
+                    'HTML', 'JavaScript', 'SCSS',
+                ],
+                img: 
+                articlecomponent,
+                deployed: 'https://article-preview-component-pearl-xi.vercel.app/',
+                github: 'https://github.com/fikymar/Article-preview-component',
+               
+                description: 'Small component. \n Code to  design',
+                frontendmentor: 'https://www.frontendmentor.io/solutions',
+                    
+    
+            },
+            {
+                id: 7,
+                title: 'Social proof section',
+                technologies: [
+                    'HTML', 'SCSS',
+                ],
+                img:spsection,
+                deployed: 'https://social-proof-section-master-blush.vercel.app/',
+                github: 'https://github.com/fikymar/social-proof-section-master',
+               
+                description:'Small component. \n Code to design',
+                frontendmentor: 'https://www.frontendmentor.io/solutions',
+                    
+    
+            },
+            {
+                id: 8,
+                title: 'Clouds on Canvas',
+                technologies: [
+                    'HTML', 'SCSS','JavaScript'
+                ],
+                img: clouds,
+               codepen: 'https://codepen.io/MarcelaFi/pen/rNWdgpv',
+                github: 'https://github.com/fikymar/Animated-clouds',
+               
+                description: 'Canvas 2D animation ',
+                
+                    
+    
+            },
+    
+            {
+                id: 9,
+                title: 'Technical documentation',
+                technologies: [
+                    'HTML', 'CSS',
+                ],
+                img: techdoc,
+                codepen: 'https://codepen.io/MarcelaFi/pen/jOVzaJR',
+                description: 'Small project to Freecodecamp',
+                
+                    
+    
+            },
     ],
    
    

@@ -1,7 +1,13 @@
+footer {
+	display: grid;
+	place-self: center;
+}
 .footer_text {
-	text-align: center;
-
 	& a {
 		color: $color2;
+
+		&:focus {
+			color: $color;
+		}
 	}
 }

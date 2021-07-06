@@ -1,6 +1,6 @@
 .nav {
 	height: 10vh;
-	line-height: 4rem;
+	//line-height: 4rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -16,14 +16,98 @@
 
 	@include breakpoint-down(large) {
 		width: 70vw;
-		height: 10vh;
-		height: calc(10vh + 1rem);
+		//height: 12vh;
+		height: calc(12vh + 1rem);
 	}
 
 	@include breakpoint-down(medium) {
 		width: 100%;
-		height: 10vh;
-		border-width: 10px;
+		//height: 12vh;
+		border-width: 5px;
+	}
+
+	@include breakpoint-down(medium) {
+		height: auto;
+	}
+
+	@include breakpoint-down(small) {
+		align-items: stretch;
+		justify-content: flex-end;
+		background: $color;
+		border-style: none;
+		border-width: 0;
+		//clip-path: circle(100px at 100% 0%);
+		&:hover {
+			border-style: none;
+			border-width: 0;
+		}
+
+		&.hideNav {
+			z-index: 15;
+			display: block;
+		}
+
+		&.open {
+			padding: 3rem 0 3rem 0;
+			clip-path: circle(250px at 100% 0%);
+			//background: $color;
+		}
+	}
+
+	& .languageBTN {
+		position: absolute;
+		top: 1rem;
+		right: 3rem;
+		width: 1.5rem;
+		height: 1.5rem;
+		border-radius: 50%;
+		color: $bgrColor;
+		background-color: $color;
+		border: 1px solid $bgrColor;
+
+		font-size: 0.7rem;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.5s ease-in-out;
+
+		&:hover,
+		&:focus {
+			color: $color;
+			background-color: $bgrColor;
+		}
+
+		@include breakpoint-down(small) {
+			right: 5rem;
+			top: 1.8rem;
+			color: $color;
+			background-color: $bgrColor;
+
+			&.hideBTN {
+				display: none;
+			}
+		}
+	}
+
+	& .nav_list {
+		width: 80%;
+		display: flex;
+		justify-content: space-between;
+		//padding: 1.8rem 0;
+		//z-index: 15;
+
+		@include breakpoint-down(small) {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: flex-start;
+			margin: 0;
+			height: 50%;
+			padding: 0;
+
+			&.hide {
+				display: none;
+			}
+		}
 	}
 
 	& .nav_item {
@@ -31,15 +115,33 @@
 		font-weight: 600;
 		//color: $color5;
 		font-family: "Montserrat";
+		font-size: 1.2rem;
 		letter-spacing: 1px;
 		transition: letter-spacing 0.5s ease-in-out;
+		//z-index: 16;
 
 		&:hover {
 			letter-spacing: 3px;
 		}
 
+		&:focus {
+			letter-spacing: 3px;
+			color: $color;
+		}
+
 		@include breakpoint-down(small) {
 			font-size: 0.8rem;
+			margin-right: 1rem;
+			margin-top: 2rem;
 		}
+	}
+
+	& .hamburgerLogo {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: $color;
+		padding: 2rem;
+		clip-path: circle(20px at 50% 50%);
 	}
 }

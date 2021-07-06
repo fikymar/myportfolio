@@ -4,10 +4,14 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	perspective: 1500px;
+
+	& a:focus {
+		transform: scale(1.2);
+	}
 }
 
 .portfolio_card {
-	background: $color;
+	background: $color4;
 	border: $border;
 	border-radius: $radius;
 	width: 13vw;
@@ -51,16 +55,16 @@
 	}
 	& .portfolio_card--back {
 		z-index: 3;
-		background-color: $bgrColor;
+		background-color: $color4;
 		transform: rotateY(180deg);
-		color: $color5;
+		color: $bgrColor;
 		justify-content: space-evenly;
 		align-items: stretch;
 	}
 
 	&:hover {
 		transform: rotateY(180deg);
-		border: $border2;
+		//border: $border2;
 	}
 
 	& h5 {
@@ -76,21 +80,25 @@
 		object-fit: cover;
 		margin-top: 1rem;
 		align-self: center;
+		filter: grayscale(100);
 	}
 
 	& p {
 		font-size: 0.8rem;
 		padding: 1rem;
 		white-space: pre-line;
-		color: $color4;
+		color: $bgrColor;
 
 		& a {
 			font-weight: 500;
+			color: $color2;
 		}
 	}
 
 	& h6 {
 		padding: 1rem;
+		color: $color;
+		font-size: 1rem;
 	}
 
 	& .portfolio_card--icons {
