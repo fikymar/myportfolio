@@ -8,6 +8,7 @@ import techdoc from './imgs/techdoc.jpg'
 import coffee from './imgs/coffee.jpg'
 import hours from './imgs/hours.jpg'
 import crowdfunding from './imgs/crowfunding.png'
+import bubbles from './imgs/bubbles.png'
 
 
 
@@ -305,24 +306,39 @@ export default {
                 
 
         },
+
         {
             id: 8,
             title: 'Mraky na canvasu',
             technologies: [
-                'HTML', 'SCSS','JavaScript'
+                'HTML', 'CSS','JavaScript'
             ],
             img: clouds,
-           codepen: 'https://codepen.io/MarcelaFi/pen/rNWdgpv',
-            github: 'https://github.com/fikymar/Animated-clouds',
-           
-            description: 'Canvas 2D animace na pozadí ',
+            codepen: 'https://codepen.io/MarcelaFi/pen/rNWdgpv',
+                github: 'https://github.com/fikymar/Animated-clouds',
+               
+                description: 'Canvas 2D animace ',
             
                 
 
         },
-
         {
             id: 9,
+            title: 'Bubliny - canvas',
+            technologies: [
+                'HTML', 'SCSS','JavaScript'
+            ],
+            img: bubbles ,
+           deployed: 'https://bubbles-six.vercel.app/',
+            github: 'https://github.com/fikymar/bubbles',
+           
+            description: 'Canvas 2D animace',
+            
+                
+
+        },
+        {
+            id: 10,
             title: 'Technická dokumentace',
             technologies: [
                 'HTML', 'CSS',
@@ -334,6 +350,8 @@ export default {
                 
 
         },
+
+      
     ],
 
         projectsEN: [
@@ -450,11 +468,26 @@ export default {
                 description: 'Canvas 2D animation ',
                 
                     
+            },
+
+            {
+                id: 9,
+                title: 'Bubbles on canvas',
+                technologies: [
+                    'HTML', 'SCSS','JavaScript'
+                ],
+                img: bubbles ,
+               deployed: 'https://bubbles-six.vercel.app/',
+                github: 'https://github.com/fikymar/bubbles',
+               
+                description: 'Canvas 2D animation',
+                
+                    
     
             },
     
             {
-                id: 9,
+                id: 10,
                 title: 'Technical documentation',
                 technologies: [
                     'HTML', 'CSS',

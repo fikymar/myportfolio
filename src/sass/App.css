@@ -556,16 +556,11 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-}
-
-.portfolio_card .portfolio_card--front {
-  z-index: 10;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
 .portfolio_card .portfolio_card--back {
-  z-index: 3;
   background-color: #142626;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);

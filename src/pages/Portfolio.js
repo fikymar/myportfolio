@@ -9,9 +9,9 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 const Portfolio = ({ language }) => {
     // const [filter, setFilter] = useState(false);
     
-     let projects = Data.projects.map(project =>
-        project);
-    console.log(projects)
+    //  let projects = Data.projects.map(project =>
+    //     project);
+    // console.log(projects)
    
     // let filtered;
     // const filterItems = (keyword) => {
@@ -34,7 +34,7 @@ const Portfolio = ({ language }) => {
             <div className='portfolio_layout'>
                 {/* <button className='allBTN'>All</button>
           <button className='ReactBTN' >React</button> */}
-        {language ? projects.map(project => (
+        {language ? Data.projects.map(project => (
             <div className='portfolio_card' key={project.id} >
                 <div className='portfolio_card--front'>
                     <img src={project.img} alt={project.title} />
