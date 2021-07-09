@@ -17,7 +17,6 @@
 }
 
 body {
-	background: rgb(49, 47, 47);
 	font-family: "Montserrat Alternates", sans-serif;
 	display: grid;
 	place-items: center;
@@ -49,6 +48,7 @@ h1 {
 	margin: 3rem 0 2rem 0;
 	font-family: "Graduate";
 	font-weight: 700;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 	@include breakpoint-down(medium) {
 		margin-top: 3rem;
@@ -72,7 +72,7 @@ h1 {
 
 	@include breakpoint-down(large) {
 		grid-template-columns: 30vw 70vw;
-		grid-template-rows: 10% auto 10%;
+		grid-template-rows: 12vh auto 10vh;
 
 		&:hover {
 			column-gap: 0rem;
@@ -255,7 +255,6 @@ h1 {
 .resume_place {
 	grid-column: 2/2;
 	grid-row: 2/2;
-	background-color: $color3;
 	overflow-y: scroll;
 	border-width: 5px 10px 5px 5px;
 
@@ -269,7 +268,12 @@ h1 {
 	}
 }
 
+.resume_place {
+	background-color: $color4;
+}
+
 .about_place {
+	background-color: $color3;
 	@include breakpoint-down(medium) {
 		background-color: #6e7372;
 		background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e63946' fill-opacity='0.22' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");

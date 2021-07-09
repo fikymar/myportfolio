@@ -1,11 +1,6 @@
 .about_layout {
 	transition: all 0.5s ease-in-out;
 
-	& h3 {
-		text-align: center;
-		font-weight: 500;
-	}
-
 	&:hover {
 		.skills {
 			background: $color4;
@@ -21,10 +16,14 @@
 .about p {
 	padding: 1.2rem 1rem;
 	white-space: pre-line;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .skills_header {
 	font-family: "Tourney", cursive;
+	text-align: center;
+	font-weight: 500;
+	color: $color2;
 }
 
 .skills {

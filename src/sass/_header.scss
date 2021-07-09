@@ -55,14 +55,16 @@
 		position: absolute;
 		top: 1rem;
 		right: 3rem;
-		width: 1.5rem;
-		height: 1.5rem;
+		width: 2rem;
+		height: 2rem;
 		border-radius: 50%;
 		color: $bgrColor;
 		background-color: $color;
-		border: 1px solid $bgrColor;
+		border: 3px solid $bgrColor;
 
 		font-size: 0.7rem;
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
 		font-weight: 600;
 		cursor: pointer;
 		transition: all 0.5s ease-in-out;
@@ -112,6 +114,7 @@
 		font-weight: 500;
 		color: $color5;
 		font-family: "Tourney", cursive;
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 		font-size: 1.2rem;
 		letter-spacing: 1px;
