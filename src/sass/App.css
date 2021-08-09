@@ -647,7 +647,7 @@ footer {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 @media (max-width: 1024px) {
@@ -740,6 +740,10 @@ footer {
   text-align: left;
   white-space: pre-line;
   margin-bottom: 2rem;
+}
+
+.work {
+  margin-right: 2rem;
 }
 
 .certificates {

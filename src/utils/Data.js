@@ -30,6 +30,14 @@ export default {
 	works: [
 		{
 			id: 1,
+			company: "Česko.Digital",
+			title: "React developer",
+			date: "7/2021 - dosud",
+			description:
+				"Jako dobrovolník se účastním projektu Začni učit! \n Píšu převážně html a css. ",
+		},
+		{
+			id: 2,
 			company: "Prominent Systems, s.r.o., Blovice",
 			title: "Nákupní referentka",
 			date: "9/2013 - 5/2021",
@@ -37,7 +45,7 @@ export default {
 				"Komunikace s dodavateli, \n vyhledávání nových dodavatelů, \n objednávky výrobního materiálu",
 		},
 		{
-			id: 2,
+			id: 3,
 			company: "Orchid Flowers CZ, s.r.o., Blovice",
 			title: "Nákupčí, logistika, obchod",
 			date: "10/2011 - 8/2013",
@@ -46,7 +54,7 @@ export default {
 		},
 
 		{
-			id: 3,
+			id: 4,
 			company: "OREA Wellness Hotel Horizont, Špičák",
 			title: "Recepční",
 			date: "7/2011 - 9/2011",
@@ -54,7 +62,7 @@ export default {
 		},
 
 		{
-			id: 4,
+			id: 5,
 			company: "Faiveley Transport LEKOV a.s., Blovice",
 			title: "Nákupní referentka(trainee)",
 			date: "7/2010 - 1/2011",
@@ -118,6 +126,15 @@ export default {
 	worksEN: [
 		{
 			id: 1,
+			company: "Česko.Digital",
+			title: "React Developer",
+			date: "9/2013 - 5/2021",
+			description:
+				"As a volunteer I participate in the project 'Začni učit!'.\n I mostly write html and css. ",
+		},
+
+		{
+			id: 2,
 			company: "Prominent Systems, s.r.o., Blovice",
 			title: "Buyer",
 			date: "9/2013 - 5/2021",
@@ -125,7 +142,7 @@ export default {
 				"Communication with suppliers, \n search for new suppliers, \n orders for production materials",
 		},
 		{
-			id: 2,
+			id: 3,
 			company: "Orchid Flowers CZ, s.r.o., Blovice",
 			title: "Commercial manager",
 			date: "10/2011 - 8/2013",
@@ -134,14 +151,14 @@ export default {
 		},
 
 		{
-			id: 3,
+			id: 4,
 			company: "OREA Wellness Hotel Horizont, Špičák",
 			title: "Receptionist",
 			date: "7/2011 - 9/2011",
 		},
 
 		{
-			id: 4,
+			id: 5,
 			company: "Faiveley Transport LEKOV a.s., Blovice",
 			title: "Buyer  - trainee",
 			date: "7/2010 - 1/2011",
@@ -174,13 +191,13 @@ export default {
 		},
 	],
 
-	about: `Jmenuju se Marcela. \n Na mateřské "dovolené" jsem si našla nové společníky - HTML, CSS a JavaScript. \n V životě už jsem dělala ledacos, ale do budoucna bych se ráda věnovala frontendu, ideálně jako výdělečné činnosti.☺\n Učím se kódovat už rok a půl za pomocí různých online kurzů a tutoriálů. Zatím je můj frontend ještě v plenkách, ale věřím, že se správným tréninkem a péčí poroste. \n Začátky jsou krušné a tak prostřednictvím těchto stránek hledám pomoc ve formě reálných projektů, či rady a kritiky od zkušenějších. \n Díky, že jste dočetli až sem a budu ráda, když si uděláte čas a kontaktujete mě s jakoukoliv připomínkou či nabídkou spolupráce.`,
-	aboutEN: `My name is Marcela. \n
-    On a maternity leave, I found myself several new companions -  HTML, CSS and JavaScript. \n I've done a lot in my life, but in the future I would like to make a living by Frontend.\n
-    I have been learning to code for a year and a half using various online courses and tutorials. So far, my frontend is still in its infancy, but I believe that with the right training and care, it will grow.☺\n
-    The beginnings are rough, so through this website I am looking for a help in the form of real projects, or advice and criticism from more experienced developers.\n
-    Thanks for reading this far. I will be glad if you find time to contact me with any comments or offers for collaboration.`,
+	about: `Jmenuju se Marcela. \nNa mateřské "dovolené" jsem si našla nové společníky - HTML, CSS a JavaScript. \n V životě už jsem dělala ledacos, ale teď bych se ráda věnovala frontendu.
+    \n Momentálně hledám uplatnění jako junior kodér. \n
+    Budu ráda, když si uděláte čas a kontaktujete mě s jakoukoliv připomínkou či nabídkou spolupráce `,
 
+	aboutEN: `My name is Marcela. \n On a maternity leave, I found myself several new companions -  HTML, CSS and JavaScript. \nI've done a lot in my life, but now I would like to make a living by Frontend.\n
+    I am currently looking for a job as a junior coder. \n
+   I will be glad if you find time to contact me with any comments or offers for collaboration.`,
 	projects: [
 		{
 			id: 1,

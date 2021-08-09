@@ -3,7 +3,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: stretch;
-	padding: 1rem 2rem;
+	padding: 1rem 1rem;
 
 	@include breakpoint-down(medium) {
 		justify-content: space-around;
@@ -75,6 +75,10 @@
 			}
 		}
 	}
+}
+
+.work {
+	margin-right: 2rem;
 }
 
 .certificates {
