@@ -31,7 +31,7 @@ export default {
 		{
 			id: 1,
 			company: "Česko.Digital",
-			title: "React developer",
+			title: "Junior React Developer",
 			date: "7/2021 - dosud",
 			description:
 				"Jako dobrovolník se účastním projektu Začni učit! \n Píšu převážně html a css. ",
@@ -127,7 +127,7 @@ export default {
 		{
 			id: 1,
 			company: "Česko.Digital",
-			title: "React Developer",
+			title: "Junior React Developer",
 			date: "9/2013 - 5/2021",
 			description:
 				"As a volunteer I participate in the project 'Začni učit!'.\n I mostly write html and css. ",
