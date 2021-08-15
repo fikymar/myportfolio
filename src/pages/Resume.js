@@ -11,7 +11,6 @@ const Resume = ({ language }) => {
 			<div className="resume_layout">
 				<div className="work">
 					<h2>
-						{" "}
 						<WorkOutlineIcon />
 						{language ? "Práce" : "Jobs"}
 					</h2>
