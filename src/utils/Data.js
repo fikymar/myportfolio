@@ -2,7 +2,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import profilecard from "./imgs/profilecard.jpg";
 import ubytko from "./imgs/ubytko.jpg";
 import articlecomponent from "./imgs/article-preview-component.jpg";
-import spsection from "./imgs/spsection.jpg";
+import spsection from "./imgs/spsection.png";
 import clouds from "./imgs/clouds.jpg";
 import techdoc from "./imgs/techdoc.jpg";
 import coffee from "./imgs/coffee.jpg";
