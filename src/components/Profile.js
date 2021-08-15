@@ -28,10 +28,6 @@ const Profile = ({ language }) => {
 					<a href={Data.mailto}>{Data.email}</a>
 				</li>
 				<li>
-					<ContactMailIcon />
-					<h6>{Data.town}</h6>
-				</li>
-				<li>
 					<a
 						href={Data.github.link}
 						target="_blank"
@@ -40,14 +36,13 @@ const Profile = ({ language }) => {
 					>
 						{Data.github.icon}
 					</a>
-					<a
-						href={Data.github.link}
-						target="_blank"
-						rel="noopener noreferrer"
-						title="Show my github profile"
-					>
+					<a href={Data.github.link} target="_blank" rel="noopener noreferrer">
 						{language ? "Github profil" : "Github profile"}
 					</a>
+				</li>
+				<li title="Adresa">
+					<ContactMailIcon />
+					<h6>{Data.town}</h6>
 				</li>
 			</ul>
 		</div>

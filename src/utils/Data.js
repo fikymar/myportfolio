@@ -7,8 +7,8 @@ import clouds from "./imgs/clouds.jpg";
 import techdoc from "./imgs/techdoc.jpg";
 import coffee from "./imgs/coffee.jpg";
 import hours from "./imgs/hours.jpg";
-import crowdfunding from "./imgs/crowfunding.png";
-import bubbles from "./imgs/bubbles.png";
+import crowdfunding from "./imgs/crowfunding.jpg";
+import bubbles from "./imgs/bubbles.jpg";
 
 export default {
 	name: "Marcela Fikrlová",
@@ -29,7 +29,13 @@ export default {
 
 	works: [
 		{
-			id: 1,
+			company: "Česko.Digital",
+			title: "Junior React Developer",
+			date: "7/2021 - dosud",
+			description:
+				"Jako dobrovolník se účastním projektu Začni učit! \n Píšu převážně html a css. ",
+		},
+		{
 			company: "Prominent Systems, s.r.o., Blovice",
 			title: "Nákupní referentka",
 			date: "9/2013 - 5/2021",
@@ -37,7 +43,6 @@ export default {
 				"Komunikace s dodavateli, \n vyhledávání nových dodavatelů, \n objednávky výrobního materiálu",
 		},
 		{
-			id: 2,
 			company: "Orchid Flowers CZ, s.r.o., Blovice",
 			title: "Nákupčí, logistika, obchod",
 			date: "10/2011 - 8/2013",
@@ -46,7 +51,6 @@ export default {
 		},
 
 		{
-			id: 3,
 			company: "OREA Wellness Hotel Horizont, Špičák",
 			title: "Recepční",
 			date: "7/2011 - 9/2011",
@@ -54,7 +58,6 @@ export default {
 		},
 
 		{
-			id: 4,
 			company: "Faiveley Transport LEKOV a.s., Blovice",
 			title: "Nákupní referentka(trainee)",
 			date: "7/2010 - 1/2011",
@@ -64,26 +67,22 @@ export default {
 
 	certificates: [
 		{
-			id: 1,
 			title: "Responsive Web Design",
 			organization: "Freecodecamp",
 			link: "https://www.freecodecamp.org/certification/fikymar/responsive-web-design",
 		},
 		{
-			id: 2,
 			title: "JavaScript Tutorial course",
 			organization: "Sololearn",
 			link: "https://www.sololearn.com/Certificate/1024-17514864/jpg/",
 		},
 		{
-			id: 3,
 			title: "CSS course",
 			organization: "Sololearn",
 			link: "https://www.sololearn.com/Certificate/1023-17514864/jpg/",
 		},
 
 		{
-			id: 4,
 			title: "HTML course",
 			organization: "Sololearn",
 			link: "https://www.sololearn.com/Certificate/1014-17514864/jpg/",
@@ -92,14 +91,12 @@ export default {
 
 	education: [
 		{
-			id: 1,
 			school: "ZČU v Plzni, fakulta ekonomická",
 			title: "Systémy projektového řízení",
 			date: "9/2010 - 3/2011",
 		},
 
 		{
-			id: 2,
 			school: "ZČU v Plzni, fakulta pedagogická",
 			title: "Psychologie se zaměřením na vzdělávání",
 			date: "2007 - 2010",
@@ -107,7 +104,6 @@ export default {
 		},
 
 		{
-			id: 3,
 			school: "ISŠ Klatovy",
 			title: "Oděvnictví",
 			date: "2003 - 2007",
@@ -117,7 +113,14 @@ export default {
 
 	worksEN: [
 		{
-			id: 1,
+			company: "Česko.Digital",
+			title: "Junior React Developer",
+			date: "9/2013 - 5/2021",
+			description:
+				"As a volunteer I participate in the project 'Začni učit!'.\n I mostly write html and css. ",
+		},
+
+		{
 			company: "Prominent Systems, s.r.o., Blovice",
 			title: "Buyer",
 			date: "9/2013 - 5/2021",
@@ -125,7 +128,6 @@ export default {
 				"Communication with suppliers, \n search for new suppliers, \n orders for production materials",
 		},
 		{
-			id: 2,
 			company: "Orchid Flowers CZ, s.r.o., Blovice",
 			title: "Commercial manager",
 			date: "10/2011 - 8/2013",
@@ -134,14 +136,12 @@ export default {
 		},
 
 		{
-			id: 3,
 			company: "OREA Wellness Hotel Horizont, Špičák",
 			title: "Receptionist",
 			date: "7/2011 - 9/2011",
 		},
 
 		{
-			id: 4,
 			company: "Faiveley Transport LEKOV a.s., Blovice",
 			title: "Buyer  - trainee",
 			date: "7/2010 - 1/2011",
@@ -150,7 +150,6 @@ export default {
 
 	educationEN: [
 		{
-			id: 1,
 			school: "University of West Bohemia in Pilsen, Faculty of Economics",
 			title: "Project engineering",
 
@@ -162,7 +161,6 @@ export default {
 			title: "Psychology",
 			date: "2007 - 2010",
 			description: "2010 Bachelor degree \n Graduated with Honor",
-			id: 2,
 		},
 
 		{
@@ -170,7 +168,6 @@ export default {
 			title: "Fashion Design and Creation",
 			date: "2003 - 2007",
 			description: "2007 Graduated with Honor",
-			id: 3,
 		},
 	],
 
@@ -181,10 +178,8 @@ export default {
 	aboutEN: `My name is Marcela. \n On a maternity leave, I found myself several new companions -  HTML, CSS and JavaScript. \nI've done a lot in my life, but now I would like to make a living by Frontend.\n
     I am currently looking for a job as a junior coder. \n
    I will be glad if you find time to contact me with any comments or offers for collaboration.`,
-
 	projects: [
 		{
-			id: 1,
 			title: "Crowdfunding app",
 			technologies: ["HTML", "SCSS", "React"],
 			framework: "React",
@@ -197,7 +192,6 @@ export default {
 				"https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR",
 		},
 		{
-			id: 2,
 			title: "Návrh webu",
 			technologies: ["HTML", "SCSS", "JavaScript"],
 			framework: "React",
@@ -208,7 +202,6 @@ export default {
 				"Design a kód. \n - JS animace \n  - parallax \n - svg filtr. ",
 		},
 		{
-			id: 3,
 			title: "Reálný web",
 			technologies: ["HTML", "SCSS", "JavaScript"],
 			img: ubytko,
@@ -218,7 +211,6 @@ export default {
 				"Jednoduchý web pro poskytovatele ubytování. \n Design a kód.",
 		},
 		{
-			id: 4,
 			title: "Hodiny",
 			technologies: ["HTML", "CSS", "JavaScript"],
 			img: hours,
@@ -227,7 +219,6 @@ export default {
 			description: "JavaScript hodiny. \n  - barvy se mění v intervalu",
 		},
 		{
-			id: 5,
 			title: "Card component",
 			technologies: ["HTML", "SCSS"],
 			img: profilecard,
@@ -240,7 +231,6 @@ export default {
 				"https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ",
 		},
 		{
-			id: 6,
 			title: "Article preview component",
 			technologies: ["HTML", "JavaScript", "SCSS"],
 			img: articlecomponent,
@@ -252,7 +242,6 @@ export default {
 				"https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT",
 		},
 		{
-			id: 7,
 			title: "Social proof section",
 			technologies: ["HTML", "SCSS"],
 			img: spsection,
@@ -265,7 +254,6 @@ export default {
 		},
 
 		{
-			id: 8,
 			title: "Mraky na canvasu",
 			technologies: ["HTML", "CSS", "JavaScript"],
 			img: clouds,
@@ -275,7 +263,6 @@ export default {
 			description: "Canvas 2D animace ",
 		},
 		{
-			id: 9,
 			title: "Bubliny - canvas",
 			technologies: ["HTML", "SCSS", "JavaScript"],
 			img: bubbles,
@@ -285,7 +272,6 @@ export default {
 			description: "Canvas 2D animace",
 		},
 		{
-			id: 10,
 			title: "Technická dokumentace",
 			technologies: ["HTML", "CSS"],
 			img: techdoc,
@@ -296,7 +282,6 @@ export default {
 
 	projectsEN: [
 		{
-			id: 1,
 			title: "Crowdfunding app",
 			technologies: ["HTML", "SCSS", "React"],
 			img: crowdfunding,
@@ -307,7 +292,6 @@ export default {
 				"https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR",
 		},
 		{
-			id: 2,
 			title: "Design and Code",
 			technologies: ["HTML", "SCSS", "JavaScript"],
 			img: coffee,
@@ -317,7 +301,6 @@ export default {
 				"Design and code. \n - JS animation \n  - parallax \n - svg filter. ",
 		},
 		{
-			id: 3,
 			title: "Real website for Accomodation provider",
 			technologies: ["HTML", "SCSS", "JavaScript"],
 			img: ubytko,
@@ -326,7 +309,6 @@ export default {
 			description: "Simple website. \n Design and code.",
 		},
 		{
-			id: 4,
 			title: "Hours",
 			technologies: ["HTML", "CSS", "JavaScript"],
 			img: hours,
@@ -336,7 +318,6 @@ export default {
 				"JavaScript hours. \n  - color theme is changing on timeinterval",
 		},
 		{
-			id: 5,
 			title: "Card component",
 			technologies: ["HTML", "SCSS"],
 			img: profilecard,
@@ -349,7 +330,6 @@ export default {
 				"https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ",
 		},
 		{
-			id: 6,
 			title: "Article preview component",
 			technologies: ["HTML", "JavaScript", "SCSS"],
 			img: articlecomponent,
@@ -361,7 +341,6 @@ export default {
 				"https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT",
 		},
 		{
-			id: 7,
 			title: "Social proof section",
 			technologies: ["HTML", "SCSS"],
 			img: spsection,
@@ -373,18 +352,15 @@ export default {
 				"https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA",
 		},
 		{
-			id: 8,
 			title: "Clouds on Canvas",
 			technologies: ["HTML", "SCSS", "JavaScript"],
 			img: clouds,
 			codepen: "https://codepen.io/MarcelaFi/pen/rNWdgpv",
 			github: "https://github.com/fikymar/Animated-clouds",
-
 			description: "Canvas 2D animation ",
 		},
 
 		{
-			id: 9,
 			title: "Bubbles on canvas",
 			technologies: ["HTML", "SCSS", "JavaScript"],
 			img: bubbles,
@@ -395,7 +371,6 @@ export default {
 		},
 
 		{
-			id: 10,
 			title: "Technical documentation",
 			technologies: ["HTML", "CSS"],
 			img: techdoc,
