@@ -15,65 +15,37 @@ const Resume = ({ language }) => {
 						<WorkOutlineIcon />
 						{language ? "Práce" : "Jobs"}
 					</h2>
-					{language
-						? Data.works.map((work) => (
-								<ul key={work.id}>
-									<li>
-										<h3 className="resume_institution"> {work.company}</h3>
-										<h4 className="resume_title"> {work.title}</h4>
-										<h5>
-											<TimelapseIcon />
-											{work.date}
-										</h5>
-										<p>{work.description}</p>
-									</li>
-								</ul>
-						  ))
-						: Data.worksEN.map((work) => (
-								<ul key={work.id}>
-									<li>
-										<h3 className="resume_institution"> {work.company}</h3>
-										<h4 className="resume_title"> {work.title}</h4>
-										<h5>
-											<TimelapseIcon />
-											{work.date}
-										</h5>
-										<p>{work.description}</p>
-									</li>
-								</ul>
-						  ))}
+					{(language ? Data.works : Data.worksEN).map((work) => (
+						<ul key={work.title}>
+							<li>
+								<h3 className="resume_institution"> {work.company}</h3>
+								<h4 className="resume_title"> {work.title}</h4>
+								<h5>
+									<TimelapseIcon />
+									{work.date}
+								</h5>
+								<p>{work.description}</p>
+							</li>
+						</ul>
+					))}
 				</div>
 				<div className="education">
 					<h2>
 						<SchoolOutlinedIcon /> {language ? "Vzdělání" : "Education"}
 					</h2>
-					{language
-						? Data.education.map((edu) => (
-								<ul key={edu.id}>
-									<li>
-										<h3 className="resume_institution">{edu.school}</h3>
-										<h4 className="resume_title">{edu.title}</h4>
-										<h5>
-											<TimelapseIcon />
-											{edu.date}
-										</h5>
-										<p>{edu.description}</p>
-									</li>
-								</ul>
-						  ))
-						: Data.educationEN.map((edu) => (
-								<ul key={edu.id}>
-									<li>
-										<h3 className="resume_institution">{edu.school}</h3>
-										<h4 className="resume_title">{edu.title}</h4>
-										<h5>
-											<TimelapseIcon />
-											{edu.date}
-										</h5>
-										<p>{edu.description}</p>
-									</li>
-								</ul>
-						  ))}
+					{(language ? Data.education : Data.educationEN).map((edu) => (
+						<ul key={edu.title}>
+							<li>
+								<h3 className="resume_institution">{edu.school}</h3>
+								<h4 className="resume_title">{edu.title}</h4>
+								<h5>
+									<TimelapseIcon />
+									{edu.date}
+								</h5>
+								<p>{edu.description}</p>
+							</li>
+						</ul>
+					))}
 
 					<div className="certificates">
 						<h2>
@@ -81,7 +53,7 @@ const Resume = ({ language }) => {
 							{language ? "Certifikáty" : "Certificates"}
 						</h2>
 						{Data.certificates.map((cert) => (
-							<ul key={cert.id}>
+							<ul key={cert.title}>
 								<li>
 									<h3 className="resume_title">{cert.title}</h3>
 									<h4 className="resume_institution">{cert.organization}</h4>

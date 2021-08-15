@@ -4,6 +4,7 @@ import materialUI from "../utils/imgs/materialui.svg";
 import three from "../utils/imgs/three.svg";
 import commerce from "..//utils/imgs/commerce.svg";
 import pixlr from "..//utils/imgs/pixlr-header-logo.png";
+import styled from "..//utils/imgs/styled-components.svg";
 
 const About = ({ language }) => {
 	return (
@@ -14,7 +15,9 @@ const About = ({ language }) => {
 				<p>{language ? Data.about : Data.aboutEN}</p>
 			</div>
 
-			<h2 className="skills_header">{language ? "S čím pracuju?" : "Stack"}</h2>
+			<h2 className="skills_header">
+				{language ? "S čím už jsem se potkala?" : "What I have already met?"}
+			</h2>
 			<div className="skills">
 				<figure>
 					<i class="fab fa-html5"></i>
@@ -49,6 +52,9 @@ const About = ({ language }) => {
 				<figure>
 					<img src={commerce} alt="commerce.js logo" />
 					<figcaption id="commerce">Commerce.js</figcaption>
+				</figure>
+				<figure>
+					<img id="styled" src={styled} alt="styled-components logo" />
 				</figure>
 				<figure>
 					<img id="pixlr" src={pixlr} alt="pixlr logo" />

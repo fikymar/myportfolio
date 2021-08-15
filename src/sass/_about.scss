@@ -20,10 +20,9 @@
 }
 
 .skills_header {
-	font-family: "Tourney", cursive;
 	text-align: center;
 	font-weight: 500;
-	color: $color2;
+	color: $bgrColor;
 }
 
 .skills {
@@ -62,6 +61,10 @@
 			margin: 0;
 			padding: 0;
 			max-width: 3rem;
+
+			&#styled {
+				transform: scale(1.5);
+			}
 		}
 
 		& figcaption {
