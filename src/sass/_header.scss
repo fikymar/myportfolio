@@ -29,7 +29,8 @@
 	@include breakpoint-down(small) {
 		align-items: stretch;
 		justify-content: flex-end;
-		background: $color;
+		background-color: $color;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23bdbfbd' fill-opacity='0.66' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 		border-style: none;
 		border-width: 0;
 		height: auto;
@@ -46,44 +47,7 @@
 
 		&.open {
 			padding: 3rem 0 3rem 0;
-			clip-path: circle(250px at 100% 0%);
-			//background: $color;
-		}
-	}
-
-	& .languageBTN {
-		position: absolute;
-		top: 1rem;
-		right: 3rem;
-		width: 2rem;
-		height: 2rem;
-		border-radius: 50%;
-		color: $bgrColor;
-		background-color: $color;
-		border: 3px solid $bgrColor;
-
-		font-size: 0.7rem;
-		text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-		box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
-		font-weight: 600;
-		cursor: pointer;
-		transition: all 0.5s ease-in-out;
-
-		&:hover,
-		&:focus {
-			color: $color;
-			background-color: $bgrColor;
-		}
-
-		@include breakpoint-down(small) {
-			right: 5rem;
-			top: 1.8rem;
-			color: $color;
-			background-color: $bgrColor;
-
-			&.hideBTN {
-				display: none;
-			}
+			clip-path: circle(300px at 100% 0%);
 		}
 	}
 
@@ -150,4 +114,10 @@
 		padding: 2rem;
 		clip-path: circle(20px at 50% 50%);
 	}
+}
+
+.languageBTN {
+	position: absolute;
+	top: 0.5rem;
+	right: 2rem;
 }

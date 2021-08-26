@@ -1,3 +1,11 @@
+.flex {
+	width: 100%;
+	margin: 1rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .portfolio_layout {
 	display: flex;
 	justify-content: space-evenly;
@@ -11,30 +19,31 @@
 
 .portfolio_card {
 	width: 15vw;
-	height: 20vw;
+	min-width: 250px;
+	aspect-ratio: 1/1.2;
 	margin-bottom: 2rem;
 	overflow: hidden;
 	border-radius: $radius;
 
-	@include breakpoint-down(large) {
-		width: 20vw;
-		height: 25vw;
-	}
+	// @include breakpoint-down(large) {
+	// 	width: 20vw;
+	// 	height: 25vw;
+	// }
 
-	@include breakpoint-down(medium) {
-		width: 30vw;
-		height: calc(30vw * 1.2);
-	}
+	// @include breakpoint-down(medium) {
+	// 	width: 30vw;
+	// 	height: calc(30vw * 1.2);
+	// }
 
-	@include breakpoint-down(small) {
-		width: 40vw;
-		height: calc(40vw * 1.1);
-	}
+	// @include breakpoint-down(small) {
+	// 	width: 40vw;
+	// 	height: calc(40vw * 1.1);
+	// }
 
-	@include breakpoint-down(xs) {
-		width: 80vw;
-		height: calc(80vw * 1.1);
-	}
+	// @include breakpoint-down(xs) {
+	// 	width: 80vw;
+	// 	height: calc(80vw * 1.1);
+	// }
 
 	&:hover {
 		& .portfolio_card--content {
@@ -58,6 +67,7 @@
 		bottom: 0;
 		right: 0;
 		border: 10px solid $bgrColor;
+		border-radius: $radius;
 	}
 
 	& .portfolio_card--back,
@@ -81,7 +91,7 @@
 		top: 50%;
 		left: 50%;
 		color: $color;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		text-shadow: 1px 2px 2px white, 0 0 15px rgba(0, 0, 0, 0.7);
 		text-align: center;
 		padding: auto;

@@ -1,42 +1,65 @@
-import '../sass/App.css'
-import hamburgerIcon from '../utils/imgs/icon-hamburger.svg'
-import closeIcon from '../utils/imgs/icon-close-menu.svg'
-import { useState } from 'react';
+import "../sass/App.css";
+import hamburgerIcon from "../utils/imgs/icon-hamburger.svg";
+import closeIcon from "../utils/imgs/icon-close-menu.svg";
+import { useState } from "react";
 
 const Header = ({ handleLanguage, language }) => {
-    const [hamburger, setHamburger] = useState(false);
-    const [size, setSize] = useState(window.innerWidth)
-   
-    const windowSize = () => {
-        setSize(window.innerWidth)
-    }
-    window.addEventListener('resize', windowSize )
-   
+	const [hamburger, setHamburger] = useState(false);
+	const [size, setSize] = useState(window.innerWidth);
 
-    const handleHamburger = (e) => {
-        setHamburger(!hamburger)
-        if (!hamburger) {
-            e.target.src = closeIcon; 
-        } else {
-            e.target.src = hamburgerIcon; 
-        }
-    }
+	const windowSize = () => {
+		setSize(window.innerWidth);
+	};
+	window.addEventListener("resize", windowSize);
 
-    return (
-        <>
-        <nav className={`nav ${hamburger ? 'open' : 'hideNav'}`}>
-            <div className={`nav_list ${hamburger ? '' : 'hide'}`}>
-            <a className='nav_item' href='/'>{language ? 'O MNĚ' : 'ABOUT ME'}</a>
-            <a className='nav_item' href='/resume'>{language ? 'životopis' : 'RESUME'}</a>
-                <a className='nav_item' href='/portfolio'>PORTFOLIO</a>
-                </div>
-            <button className={`languageBTN ${hamburger ? '' : 'hideBTN'}`} title='Change language' onClick={() => handleLanguage()}>{language ? 'EN' : 'CZ'}</button>
+	const handleHamburger = (e) => {
+		setHamburger(!hamburger);
+		if (!hamburger) {
+			e.target.src = closeIcon;
+		} else {
+			e.target.src = hamburgerIcon;
+		}
+	};
 
-            {size <= 800 ? 
-            <img className='hamburgerLogo' src={hamburgerIcon} alt='hamburger' title='menu' onClick={(e) => handleHamburger(e) }/> : null }
-        </nav>
-       </>
-    )
-}
+	return (
+		<>
+			<nav className={`nav ${hamburger ? "open" : "hideNav"}`}>
+				<div className={`nav_list ${hamburger ? "" : "hide"}`}>
+					{size <= 800 ? (
+						<a className="nav_item" href="/#contacts">
+							{language ? "Kontakty" : "Contacts"}
+						</a>
+					) : null}
+					<a className="nav_item" href="/">
+						{language ? "O MNĚ" : "ABOUT ME"}
+					</a>
+					<a className="nav_item" href="/resume">
+						{language ? "životopis" : "RESUME"}
+					</a>
+					<a className="nav_item" href="/portfolio">
+						PORTFOLIO
+					</a>
+				</div>
+				<button
+					className={`BTN languageBTN ${hamburger ? "" : "hideBTN"}`}
+					title="Change language"
+					onClick={() => handleLanguage()}
+				>
+					{language ? "EN" : "CZ"}
+				</button>
 
-export default Header
+				{size <= 800 ? (
+					<img
+						className="hamburgerLogo"
+						src={hamburgerIcon}
+						alt="hamburger"
+						title="menu"
+						onClick={(e) => handleHamburger(e)}
+					/>
+				) : null}
+			</nav>
+		</>
+	);
+};
+
+export default Header;

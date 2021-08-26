@@ -3,6 +3,8 @@ import Data from "../utils/Data";
 import materialUI from "../utils/imgs/materialui.svg";
 import three from "../utils/imgs/three.svg";
 import commerce from "..//utils/imgs/commerce.svg";
+import axios from "..//utils/imgs/axios.svg";
+import next from "..//utils/imgs/next.svg";
 import pixlr from "..//utils/imgs/pixlr-header-logo.png";
 import styled from "..//utils/imgs/styled-components.svg";
 
@@ -40,7 +42,14 @@ const About = ({ language }) => {
 					<i class="fab fa-react"></i>
 					<figcaption>React</figcaption>
 				</figure>
-
+				<figure>
+					<img src={next} alt="three logo" />
+					<figcaption>Next.js</figcaption>
+				</figure>
+				<figure>
+					<img src={axios} alt="three logo" />
+					<figcaption>Axios.js</figcaption>
+				</figure>
 				<figure>
 					<img src={materialUI} alt="materialUI logo" />
 					<figcaption>Material UI</figcaption>

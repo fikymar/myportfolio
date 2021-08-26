@@ -1,10 +1,11 @@
 import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import profilecard from "./imgs/profilecard.jpg";
 import ubytko from "./imgs/ubytko.jpg";
 import articlecomponent from "./imgs/article-preview-component.jpg";
 import spsection from "./imgs/spsection.png";
 import clouds from "./imgs/clouds.jpg";
-import techdoc from "./imgs/techdoc.jpg";
+import news from "./imgs/news.png";
 import coffee from "./imgs/coffee.jpg";
 import hours from "./imgs/hours.jpg";
 import crowdfunding from "./imgs/crowfunding.jpg";
@@ -25,6 +26,12 @@ export default {
 		link: "https://github.com/fikymar",
 		text: "My github profile",
 		icon: <GitHubIcon />,
+	},
+
+	linkedin: {
+		link: "https://www.linkedin.com/in/fikymar/",
+		text: "My linkedin profile",
+		icon: <LinkedInIcon />,
 	},
 
 	works: [
@@ -115,9 +122,9 @@ export default {
 		{
 			company: "Česko.Digital",
 			title: "Junior React Developer",
-			date: "9/2013 - 5/2021",
+			date: "7/2021 - until now",
 			description:
-				"As a volunteer I participate in the project 'Začni učit!'.\n I mostly write html and css. ",
+				"As a volunteer I participate on the project 'Začni učit!'.\n I mostly write html and css. ",
 		},
 
 		{
@@ -125,7 +132,7 @@ export default {
 			title: "Buyer",
 			date: "9/2013 - 5/2021",
 			description:
-				"Communication with suppliers, \n search for new suppliers, \n orders for production materials",
+				"Communication with suppliers, \n searching for new suppliers, \n ordering  production materials",
 		},
 		{
 			company: "Orchid Flowers CZ, s.r.o., Blovice",
@@ -192,15 +199,13 @@ export default {
 				"https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR",
 		},
 		{
-			title: "Návrh webu",
-			technologies: ["HTML", "SCSS", "JavaScript"],
-			framework: "React",
-			img: coffee,
-			deployed: "https://coffee-website-beta.vercel.app/",
-			github: "https://github.com/fikymar/coffee-website",
-			description:
-				"Design a kód. \n - JS animace \n  - parallax \n - svg filtr. ",
+			title: "Next News API",
+			technologies: ["HTML", "CSS", "JavaScript", "React", "Next"],
+			img: news,
+			deployed: "https://next-newsapi-gamma.vercel.app/",
+			description: "Práce s JSON Api, \n Next.js",
 		},
+
 		{
 			title: "Reálný web",
 			technologies: ["HTML", "SCSS", "JavaScript"],
@@ -209,6 +214,16 @@ export default {
 			github: "https://github.com/fikymar/ubytovani",
 			description:
 				"Jednoduchý web pro poskytovatele ubytování. \n Design a kód.",
+		},
+		{
+			title: "Návrh webu",
+			technologies: ["HTML", "SCSS", "JavaScript"],
+			framework: "React",
+			img: coffee,
+			deployed: "https://coffee-website-beta.vercel.app/",
+			github: "https://github.com/fikymar/coffee-website",
+			description:
+				"Design a kód. \n - JS animace \n  - parallax \n - svg filtr. ",
 		},
 		{
 			title: "Hodiny",
@@ -271,13 +286,6 @@ export default {
 
 			description: "Canvas 2D animace",
 		},
-		{
-			title: "Technická dokumentace",
-			technologies: ["HTML", "CSS"],
-			img: techdoc,
-			codepen: "https://codepen.io/MarcelaFi/pen/jOVzaJR",
-			description: "Cvičný projekt Freecodecamp",
-		},
 	],
 
 	projectsEN: [
@@ -291,14 +299,13 @@ export default {
 			frontendmentor:
 				"https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR",
 		},
+
 		{
-			title: "Design and Code",
-			technologies: ["HTML", "SCSS", "JavaScript"],
-			img: coffee,
-			deployed: "https://coffee-website-beta.vercel.app/",
-			github: "https://github.com/fikymar/coffee-website",
-			description:
-				"Design and code. \n - JS animation \n  - parallax \n - svg filter. ",
+			title: "Next News API",
+			technologies: ["HTML", "CSS", "JavaScript", "React", "Next"],
+			img: news,
+			deployed: "https://next-newsapi-gamma.vercel.app/",
+			description: "Working  with JSON Api, \n Using Next.js",
 		},
 		{
 			title: "Real website for Accomodation provider",
@@ -308,6 +315,16 @@ export default {
 			github: "https://github.com/fikymar/ubytovani",
 			description: "Simple website. \n Design and code.",
 		},
+		{
+			title: "Design and Code",
+			technologies: ["HTML", "SCSS", "JavaScript"],
+			img: coffee,
+			deployed: "https://coffee-website-beta.vercel.app/",
+			github: "https://github.com/fikymar/coffee-website",
+			description:
+				"Design and code. \n - JS animation \n  - parallax \n - svg filter. ",
+		},
+
 		{
 			title: "Hours",
 			technologies: ["HTML", "CSS", "JavaScript"],
@@ -368,14 +385,6 @@ export default {
 			github: "https://github.com/fikymar/bubbles",
 
 			description: "Canvas 2D animation",
-		},
-
-		{
-			title: "Technical documentation",
-			technologies: ["HTML", "CSS"],
-			img: techdoc,
-			codepen: "https://codepen.io/MarcelaFi/pen/jOVzaJR",
-			description: "Small project to Freecodecamp",
 		},
 	],
 };

@@ -211,7 +211,8 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    background: #e63946;
+    background-color: #e63946;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23bdbfbd' fill-opacity='0.66' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     border-style: none;
     border-width: 0;
     height: auto;
@@ -226,45 +227,8 @@
   }
   .nav.open {
     padding: 3rem 0 3rem 0;
-    -webkit-clip-path: circle(250px at 100% 0%);
-            clip-path: circle(250px at 100% 0%);
-  }
-}
-
-.nav .languageBTN {
-  position: absolute;
-  top: 1rem;
-  right: 3rem;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  color: #fefefe;
-  background-color: #e63946;
-  border: 3px solid #fefefe;
-  font-size: 0.7rem;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
-  font-weight: 600;
-  cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.nav .languageBTN:hover, .nav .languageBTN:focus {
-  color: #e63946;
-  background-color: #fefefe;
-}
-
-@media (max-width: 800px) {
-  .nav .languageBTN {
-    right: 5rem;
-    top: 1.8rem;
-    color: #e63946;
-    background-color: #fefefe;
-  }
-  .nav .languageBTN.hideBTN {
-    display: none;
+    -webkit-clip-path: circle(300px at 100% 0%);
+            clip-path: circle(300px at 100% 0%);
   }
 }
 
@@ -344,6 +308,12 @@
   padding: 2rem;
   -webkit-clip-path: circle(20px at 50% 50%);
           clip-path: circle(20px at 50% 50%);
+}
+
+.languageBTN {
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
 }
 
 footer {
@@ -476,6 +446,20 @@ footer {
   color: #fefefe;
 }
 
+.flex {
+  width: 100%;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .portfolio_layout {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -498,38 +482,11 @@ footer {
 
 .portfolio_card {
   width: 15vw;
-  height: 20vw;
+  min-width: 250px;
+  aspect-ratio: 1/1.2;
   margin-bottom: 2rem;
   overflow: hidden;
   border-radius: 5px;
-}
-
-@media (max-width: 1380px) {
-  .portfolio_card {
-    width: 20vw;
-    height: 25vw;
-  }
-}
-
-@media (max-width: 1024px) {
-  .portfolio_card {
-    width: 30vw;
-    height: calc(30vw * 1.2);
-  }
-}
-
-@media (max-width: 800px) {
-  .portfolio_card {
-    width: 40vw;
-    height: calc(40vw * 1.1);
-  }
-}
-
-@media (max-width: 500px) {
-  .portfolio_card {
-    width: 80vw;
-    height: calc(80vw * 1.1);
-  }
 }
 
 .portfolio_card:hover .portfolio_card--content {
@@ -557,6 +514,7 @@ footer {
   bottom: 0;
   right: 0;
   border: 10px solid #fefefe;
+  border-radius: 5px;
 }
 
 .portfolio_card .portfolio_card--back,
@@ -581,7 +539,7 @@ footer {
   top: 50%;
   left: 50%;
   color: #e63946;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-shadow: 1px 2px 2px white, 0 0 15px rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: auto;
@@ -878,18 +836,6 @@ h1 {
   font-family: "Graduate";
   font-weight: 700;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 1024px) {
-  h1 {
-    margin-top: 3rem;
-  }
-}
-
-@media (max-width: 800px) {
-  h1 {
-    margin-top: 3rem;
-  }
 }
 
 .main_layout {
@@ -1220,6 +1166,42 @@ h1 {
     grid-column: 1/1;
     -ms-grid-row: 4;
     grid-row: 4/4;
+  }
+}
+
+.BTN {
+  min-width: 2rem;
+  min-height: 2rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  color: #fefefe;
+  background-color: #e63946;
+  border: 3px solid #fefefe;
+  font-size: 0.7rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+  margin-right: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.BTN:hover, .BTN:focus {
+  color: #e63946;
+  background-color: #fefefe;
+}
+
+@media (max-width: 800px) {
+  .BTN {
+    right: 5rem;
+    top: 1.8rem;
+    color: #e63946;
+    background-color: #fefefe;
+  }
+  .BTN.hideBTN {
+    display: none;
   }
 }
 /*# sourceMappingURL=App.css.map */

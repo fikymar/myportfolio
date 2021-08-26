@@ -3,6 +3,9 @@ import Data from "../utils/Data";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import { AlternateEmail } from "@material-ui/icons";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
+import GetAppIcon from "@material-ui/icons/GetApp";
+import CV from "../utils/FikyMarCV.pdf";
+import CVEN from "../utils/FikyMarCVen.pdf";
 
 const Profile = ({ language }) => {
 	return (
@@ -13,7 +16,7 @@ const Profile = ({ language }) => {
 				{/* <img className='profile_img' src={me} alt='me' /> */}
 				<div className="img"></div>
 			</div>
-			<ul>
+			<ul id="contacts">
 				<li>
 					{" "}
 					<a href={Data.callto} title="Call me">
@@ -26,6 +29,10 @@ const Profile = ({ language }) => {
 						<AlternateEmail />
 					</a>
 					<a href={Data.mailto}>{Data.email}</a>
+				</li>
+				<li title="Address">
+					<ContactMailIcon />
+					<h6>{Data.town}</h6>
 				</li>
 				<li>
 					<a
@@ -40,9 +47,31 @@ const Profile = ({ language }) => {
 						{language ? "Github profil" : "Github profile"}
 					</a>
 				</li>
-				<li title="Adresa">
-					<ContactMailIcon />
-					<h6>{Data.town}</h6>
+				<li>
+					<a
+						href={Data.linkedin.link}
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Show my github profile"
+					>
+						{Data.linkedin.icon}
+					</a>
+					<a
+						href={Data.linkedin.link}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{language ? "LinkedIn profil" : "LinkedIn profile"}
+					</a>
+				</li>
+
+				<li title="Download CV">
+					<a href={language ? CV : CVEN} download>
+						<GetAppIcon />
+					</a>
+					<a href={language ? CV : CVEN} download>
+						{language ? "Stáhnout Životopis" : "Download CV"}
+					</a>
 				</li>
 			</ul>
 		</div>
